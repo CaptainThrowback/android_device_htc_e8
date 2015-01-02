@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/htc/m8/full_e8.mk)
+$(call inherit-product, device/htc/e8/full_e8.mk)
 # Release name
 PRODUCT_RELEASE_NAME := e8
 

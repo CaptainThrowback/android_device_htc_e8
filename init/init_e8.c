@@ -58,27 +58,22 @@ void vendor_load_properties()
         cdma_properties("1", "8", "310120", "Sprint");
         property_set("ro.product.device", "htc_mecwhl");
         property_set("ro.product.model", "0PAJ5");
-        property_set("ro.build.product", "htc_mecwhl");
     } else if (strstr(bootmid, "0PAJ10000")) {
         /* China Mobile (mectl) */
         property_set("ro.product.device", "htc_mectl");
         property_set("ro.product.model", "HTC One_E8");
-        property_set("ro.build.product", "htc_mectl");
-    } else if (strstr(bootmid, "0PAJ20000")) || (strstr(bootmid, "0PAJ21000")) {
+    } else if (strstr(bootmid, "0PAJ20000") || strstr(bootmid, "0PAJ21000")) {
         /* China Unicom/Bangladesh (mecdugl) */
         property_set("ro.product.device", "htc_mecdugl");
         property_set("ro.product.model", "HTC One_E8 Dual Sim");
-        property_set("ro.build.product", "htc_mecdugl");
     } else if (strstr(bootmid, "0PAJ40000")) {
         /* China Telecom (mecdwgl) */
         property_set("ro.product.device", "htc_mecdwgl");
         property_set("ro.product.model", "HTC One_E8 Dual Sim");
-        property_set("ro.build.product", "htc_mecdwgl");
     } else {
         /* E8 (mecul) */
         property_set("ro.product.device", "htc_mecul");
         property_set("ro.product.model", "HTC One_E8");
-        property_set("ro.build.product", "htc_mecul");
     }
 
     property_get("ro.product.device", device);
